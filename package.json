@@ -1,0 +1,24 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React Repo By Srikar Alladi",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "srikar"
+  ],
+  "author": "Srikar Alladi",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist" : [
+    "last 10 versions"
+  ]
+}
