@@ -13,3 +13,9 @@
  - Error Handling (good view of errors)
  - It's a zero config tool 
  - Tree shaking (removes unused code)
+
+
+# Routing in Webapps 
+
+- Client Side Routing (Without any network calls)
+- Server Side Routing
