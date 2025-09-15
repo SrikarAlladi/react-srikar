@@ -5,22 +5,25 @@ import { Link } from "react-router-dom";
 const Header = () =>{
     const [logBtn,setLogBtn] = useState("Login");
     return(
-        <div className="header">
+        <div className="flex justify-between shadow-lg sm: bg-yellow-50 lg:bg-blue-50">
             <div className="logo-container">
-                <img className="logo" src={LOGO_URL}></img>
+                <img className="w-30" src={LOGO_URL}></img>
             </div>
-            <div className="nav-items">
-                <ul>
-                    <li>
+            <div className="flex items-center">
+                <ul className="flex p-4 m-4">
+                    <li className="px-4">
                         <Link to="/">Home</Link>
                     </li>
-                    <li>
+                    <li className="px-4">
                         <Link to="/about">About</Link>
                     </li>
-                    <li>
+                    <li className="px-4">
                         <Link to="/contact">Contact Us</Link>
                     </li>
-                    <li>
+                    <li className="px-4">
+                        <Link to="/grocery">Grocery</Link>
+                    </li>
+                    <li className="px-4">
                         <Link to="/cart">Cart</Link>
                     </li>
                     <button className="loginButton" onClick={()=>{setLogBtn("Logout")}}>{logBtn}</button>
