@@ -1,7 +1,6 @@
 
-import RestaurentCard from "./RestaurentCard";
-import Shimmer from "./Shimmer";
-import resList from "../utils/mockData";
+import RestaurentCard,{withPromotedLabel} from "./RestaurentCard";
+import Shimmer from "./Shimmer"; 
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -10,6 +9,8 @@ const Body = () => {
     const [listOfRestaurents,setListOfRestaurents] = useState([]);
     const [filteredRestaurents,setFilteredRestaurents] = useState([]);
     const [searchVal,setSearchVal] = useState([]);
+
+    const RestaurentCardPromoted = withPromotedLabel(RestaurentCard);
 
     useEffect(() =>{
         console.log("Use Effect Called");
@@ -66,7 +67,12 @@ const Body = () => {
                     {
                         filteredRestaurents.map(restaurent =>
                             <Link to={"/restaurent/" + restaurent?.info?.id} key={restaurent?.info?.id}> 
-                                <RestaurentCard key={restaurent?.info?.id} resData={restaurent}/>
+                                {restaurent?.info?.isOpen ? (
+                                    <RestaurentCardPromoted resData={restaurent}/>
+                                )
+                                :(
+                                    <RestaurentCard resData={restaurent}/>
+                                )}
                             </Link>
                         )
                     } 
