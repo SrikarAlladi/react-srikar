@@ -1,0 +1,85 @@
+{
+    "info": {
+      "id": "750227",
+      "name": "Daily Kitchen - Everyday Homely Meals",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/10/0cf40dec-176c-4de8-8ee1-238885cc9374_750227.jpg",
+      "locality": "Kundalahalli",
+      "areaName": "Marathahalli",
+      "costForTwo": "₹250 for two",
+      "cuisines": [
+        "Home Food",
+        "Indian",
+        "North Indian",
+        "Thalis"
+      ],
+      "avgRating": 4.6,
+      "parentId": "444382",
+      "avgRatingString": "4.6",
+      "totalRatingsString": "733",
+      "sla": {
+        "deliveryTime": 25,
+        "lastMileTravel": 0.1,
+        "serviceability": "SERVICEABLE",
+        "slaString": "20-30 mins",
+        "lastMileTravelString": "0.1 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-09-22 02:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Ratnesh_Badges/Rx_Awards_2025/Newcomers.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Delivery!",
+                  "imageId": "Ratnesh_Badges/Rx_Awards_2025/Newcomers.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹99"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+      "context": "seo-data-5960af32-cef2-40d3-8379-7267037dcce6"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/city/bangalore/daily-kitchen-everyday-homely-meals-kundalahalli-marathahalli-rest750227",
+      "type": "WEBLINK"
+    }
+}

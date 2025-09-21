@@ -8,6 +8,8 @@ import Error from "./components/Error";
 import Cart from "./components/Cart";
 import RestaurantMenu from "./components/RestaurentMenu";
 import userContext from "./utils/userContext";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 //import Grocery from "./components/Grocery";
 
 const Grocery = lazy(() => import("./components/Grocery"));
@@ -47,12 +49,14 @@ const AppLayout = () =>{
     },[])
 
     return (
-        <userContext.Provider value={{loggedInUser: userName}}>
-            <div className="app">
-                <Header/>
-                <Outlet/>
-            </div>
-        </userContext.Provider>
+        <Provider store={appStore}>
+            <userContext.Provider value={{loggedInUser: userName}}>
+                <div className="app">
+                    <Header/>
+                    <Outlet/>
+                </div>
+            </userContext.Provider>
+        </Provider>
     )
 }
 

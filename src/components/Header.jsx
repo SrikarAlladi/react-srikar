@@ -2,12 +2,19 @@ import { useState, useContext } from "react";
 import {LOGO_URL} from "../utils/constants";
 import { Link } from "react-router-dom";
 import userContext from "../utils/userContext";
+import { useSelector } from "react-redux";
 
 const Header = () =>{
     const [logBtn,setLogBtn] = useState("Login");
 
     const data = useContext(userContext);
     console.log(data);
+
+    // Subscribing to the store using selector
+    const cartItems = useSelector((store) => store.cart.items); 
+
+    console.log("cartItems-->" , cartItems)
+
     return(
         <div className="flex justify-between shadow-lg sm: bg-yellow-50 lg:bg-blue-50">
             <div className="logo-container">
@@ -28,7 +35,7 @@ const Header = () =>{
                         <Link to="/grocery">Grocery</Link>
                     </li>
                     <li className="px-4">
-                        <Link to="/cart">Cart</Link>
+                        <Link to="/cart">Cart ( {cartItems.length}items ) </Link>
                     </li>
                     <button className="loginButton" onClick={()=>{setLogBtn("Logout")}}>{logBtn}</button>
                     <li className="px-4">
